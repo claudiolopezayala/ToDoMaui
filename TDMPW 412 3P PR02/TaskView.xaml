@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TDMPW_412_3P_PR02.TaskView">
+    <Frame
+        BackgroundColor="#50ffffff">
+        <HorizontalStackLayout
+            Spacing="15"
+            Padding="10,5,10,5">
+            <CheckBox
+                x:Name="check"
+                CheckedChanged="CheckBox_CheckedChanged"
+                VerticalOptions="Start"/>
+            <VerticalStackLayout
+                Spacing="5"
+                WidthRequest="220">
+                <Label 
+                    x:Name="title"
+                    FontSize="22"
+                    FontFamily="Sodo"
+                    TextColor="Black"
+                    HorizontalOptions="Start"
+                    LineBreakMode="WordWrap"/>
+
+                <BoxView
+                    HeightRequest="1"
+                    BackgroundColor="Gray"/>
+
+                <Label 
+                    x:Name="description"
+                    FontSize="18"
+                    FontFamily="Sodo"
+                    TextColor="Black"
+                    HorizontalOptions="Start"
+                    LineBreakMode="WordWrap"/>
+
+            </VerticalStackLayout>
+
+            <ImageButton
+                WidthRequest="20"
+                HeightRequest="20"
+                Margin="5"
+                Source="close.png"
+                Clicked="ImageButton_Clicked"
+                VerticalOptions="Start"/>
+
+        </HorizontalStackLayout>
+    </Frame>
+</ContentView>
